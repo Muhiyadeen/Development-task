@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+:root {
+  --red: #ff3838;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+*::-moz-selection {
+  background: var(--red);
+  color: #fff;
+}
+
+*::selection {
+  background: var(--red);
+  color: #fff;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 3rem;
+  color: #666;
+  font-weight: bolder;
+}
+
+.logo i {
+  color: #ff6131;
+  padding: 0.5rem;
+}
+
+.navbar a {
+  font-size: 2.5rem;
+  color: #666;
+  margin-left: 3em;
+}
+
+.navbar a:hover {
+  color: var(--red);
+}
+
+.Home .Heading {
+  color: #666;
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1rem;
+}
+
+.box-container {
+  display: grid;
+  grid-template-areas: "a b c" "d e f";
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.box.a {
+  grid-area: a;
+}
+
+.box.b {
+  grid-area: b;
+}
+
+.box.c {
+  grid-area: c;
+}
+
+.box.d {
+  grid-area: d;
+}
+
+.box.e {
+  grid-area: e;
+}
+
+.box.f {
+  grid-area: f;
+}
+
+.box {
+  border: 5px solid rgb(109, 107, 107);
+  background-color: #f9f7f6;
+  border-radius: 5px;
+  margin: 20px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-areas: "img" "h3" "p" "a";
+  height: 400px;
+}
+
+img {
+  grid-area: img;
+  justify-self: center;
+  height: 75%;
+  width: 90%;
+}
+
+.box img {
+  grid-area: img;
+  justify-self: center;
+  height: 90%;
+  width: 90%;
+}
+
+.box h3 {
+  grid-area: h3;
+  font-size: 2rem;
+  justify-self: center;
+}
+
+.box p {
+  grid-area: p;
+  justify-self: center;
+}
+
+.box a {
+  grid-area: a;
+  justify-self: center;
+  color: rgb(9, 70, 224);
+}/*# sourceMappingURL=main.css.map */
